@@ -1,7 +1,11 @@
+function make(id, firstName, location) {
+  return { id, firstName, location };
+}
+
 export default function getListStudents() {
   return [
-    { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
-    { id: 2, firstName: 'James', location: 'Columbia' },
-    { id: 5, firstName: 'Serena', location: 'San Francisco' }
+    make(1, 'Guillaume', 'San Francisco'),
+    make(2, 'James', 'Columbia'),
+    make(5, 'Serena', 'San Francisco'),
   ];
 }
